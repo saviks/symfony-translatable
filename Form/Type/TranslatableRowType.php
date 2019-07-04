@@ -3,6 +3,7 @@
 namespace Alahtarin\TranslatableBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
@@ -94,7 +95,7 @@ class TranslatableRowType extends AbstractType
             'locales'           => $this->defaultLocales,
             'use_delete'        => false,
             'switch_class'      => '',
-            'field_type'        => 'text',
+            'field_type'        => TextType::class,
             'validation_method' => 'all',
             'required'          => true,
             'requirements'      => [],
