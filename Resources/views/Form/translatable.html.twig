@@ -1,4 +1,4 @@
-{% block translatable_widget %}
+{% block translatable_row_widget %}
     {% set sanitized_name = full_name|replace({'[' : '_', ']' : '_'}) %}
     <dl class="tabs language-tabs-switch translatable-vertical {{ switch_class }}" id="{{ id ~ '-switcher' }}" data-tab>
         {% for locale in locales %}
